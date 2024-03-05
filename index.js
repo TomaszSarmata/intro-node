@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
-import { count } from "./utils.js";
-import whateverNameAsItsDefault from "./utils.js";
+import * as utils from "./utils"; //import everything from utils folder as utils (the entire folder) - example of how to bundle exports / imports through index.js in a seperate folder
+
+// import { count } from "./utils/utils.js";
+// import whateverNameAsItsDefault from "./utils/utils.js";
 import fs from "fs"; //if it's internal module we don't provide the path (as opposed to the user created modules)
 import _ from "lodash"; //this is how we import 3rd party modules that we have installed on the project
 
