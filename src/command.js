@@ -20,17 +20,17 @@ yargs(hideBin(process.argv))
     type: "string",
     description: "tags to add to the note",
   })
-  .command(
-    "new <note>",
-    "create a new note",
-    (yargs) => {
-      return yargs.positional("note", {
-        describe: "The content of the note you want to create",
-        type: "string",
-      });
-    },
-    async (argv) => {}
-  )
+  // .command(
+  //   "new <note>",
+  //   "create a new note",
+  //   (yargs) => {
+  //     return yargs.positional("note", {
+  //       describe: "The content of the note you want to create",
+  //       type: "string",
+  //     });
+  //   },
+  //   async (argv) => {}
+  // )
   .option("tags", {
     alias: "t",
     type: "string",
