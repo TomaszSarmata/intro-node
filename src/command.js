@@ -31,11 +31,11 @@ yargs(hideBin(process.argv))
   //   },
   //   async (argv) => {}
   // )
-  .option("tags", {
-    alias: "t",
-    type: "string",
-    description: "tags to add to the note",
-  })
+  // .option("tags", {
+  //   alias: "t",
+  //   type: "string",
+  //   description: "tags to add to the note",
+  // })
   .command(
     "all",
     "get all notes",
