@@ -6,4 +6,10 @@ const readPjson = async () => {
   console.log(JSON.parse(await fs.readFile(pjsonPath, "utf-8")));
 };
 
-readPjson();
+const writeFile = async () => {
+  const newFile = fileURLToPath(new URL("./demo.js", import.meta.url));
+  await fs.writeFile(newFile, `console.log('Does it work?')`);
+};
+
+// readPjson();
+writeFile();
